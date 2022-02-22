@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 
@@ -20,6 +21,7 @@ main {
         "texto1 img2"
         "texto2 img3"
     ;
+    overflow-x: hidden;
 }
 
 
@@ -92,19 +94,52 @@ footer {
     text-align: center;
     color: #fff;
     font-family:  'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 920px){
     main {
     grid-template-columns: 1fr;    
     grid-template-areas: 
-    "texto"
-    "img1"
-    "texto1"
-    "img2"
-    "texto2"
-    "img3"
+    "texto texto texto"
+    "img1 img1 img1"
+    "texto1 texto1 texto1"
+    "img2 img2 img2"
+    "texto2 texto2 texto2"
+    "img3 img3 img3"
     ;
+    }
+
+    .img1 {
+        width: 905px;
+    }
+    .img2 {
+        width: 905px;
+    }
+    .img3 {
+        width: 905px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    .texto span {
+        word-wrap: break-word;
+    }
+    
+
+}
+
+
+@media (max-width: 1215px) {
+    body {
+        overflow-x: hidden;
     }
 
 }
