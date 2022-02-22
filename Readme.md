@@ -1,2 +1,5 @@
 ## Página de estudo Grid
-    Sem responsividade ainda, porém os itens já estão posicionados nos devidos lugares
+    Itens já estão posicionados nos devidos lugares
+
+## Tentativa de adição de responsividade
+    Responsividade ainda não está 100%, porém algumas coisas ja funcionam
